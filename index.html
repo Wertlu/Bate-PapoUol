@@ -15,13 +15,13 @@
 </head>
 
 <body>
-    <main class="login-page">
+    <div class="login-page">
         <img class="login-logo" src="assets/logo.png">
-        <input class="nickname-text-box" type="text" placeholder="Digite o seu nome">
-        <button>
+        <input onkeypress="onEnterPress()" class="nickname-text-box" type="text" placeholder="Digite o seu nome">
+        <button onclick="login()">
             Entrar
         </button>
-    </main>
+    </div>
 
     <main class="main-page hidden">
         <nav>
