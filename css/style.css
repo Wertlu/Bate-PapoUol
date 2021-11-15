@@ -1,0 +1,244 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #E5E5E5;
+}
+
+i {
+    font-style: italic;
+}
+
+b {
+    font-style: normal;
+    font-weight: bold;
+}
+
+time {
+    color: #AAAAAA;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-logo {
+    margin: 72px 0px 94px;
+    width: 130px;
+    height: 92px;
+}
+
+.nickname-text-box {
+    width: 261px;
+    height: 54px;
+    background: #FFFFFF;
+    border: 1px solid #D7D7D7;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.nickname-text-box::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 139%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #AEAEAE;
+}
+
+button {
+    width: 109px;
+    height: 45px;
+    background: #E7E7E7;
+    border: none;
+    border-radius: 9px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 139%;
+    color: #696969;
+}
+
+nav,
+footer {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+}
+
+nav {
+    padding: 0px 22px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0px;
+}
+
+nav img {
+    width: 75px;
+    height: 53px;
+}
+
+nav ion-icon,
+footer ion-icon {
+    width: 43px;
+    height: 31px;
+}
+
+.main-page {
+    background: #F3F3F3;
+}
+
+.chat {
+    margin: 22px 0px 22px;
+}
+
+.message {
+    border-radius: 2px;
+    margin: 4px 0px 4px;
+    padding: 15px 9px 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+}
+
+.logged-in-out {
+    background: #DCDCDC;
+}
+
+.private {
+    background: #FFDEDE;
+}
+
+footer {
+    padding: 0px 18px;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    bottom: 0px;
+}
+
+.message-text-box {
+    border: none;
+    outline: none;
+}
+
+.message-text-box::placeholder {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+footer div i {
+    margin-top: 11px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 139%;
+    display: flex;
+    align-items: center;
+    color: #505050;
+}
+
+aside {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+}
+
+.transparent {
+    width: 31%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.menu {
+    width: 69%;
+    margin: 26px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.menu h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.menu ion-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.menu li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    position: relative;
+    margin-left: 8px;
+}
+
+.checkmark {
+    display: none;
+    color: #28BB25;
+    font-weight: bolder;
+    position: absolute;
+    right: 28px;
+}
+
+.contacts,
+.visibility {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 18px;
+    width: 100%;
+}
+
+.selected .checkmark {
+    display: initial;
+}
+
+.hidden {
+    display: none;
+}
