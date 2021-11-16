@@ -116,6 +116,7 @@ footer {
 }
 
 .message {
+    width: 100vw;
     background: #FFFFFF;
     border-radius: 2px;
     font-family: Roboto;
@@ -126,6 +127,8 @@ footer {
     display: flex;
     align-items: center;
     padding: 15px 0px 15px 8px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .logged-in-out {
@@ -204,13 +207,14 @@ aside {
 }
 
 .menu {
-    padding: 26px 18px;
+    padding: 26px 12px;
     height: 100%;
     width: 69%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #FFFFFF;
+    overflow-y: scroll;
 }
 
 .contacts,
@@ -244,8 +248,16 @@ aside {
     line-height: 19px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
     color: #000000;
+    position: relative;
+}
+
+.menu li span {
+    width: 80%;
+    text-align: left;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 aside ul div {
@@ -262,6 +274,8 @@ aside ul div {
     display: none;
     margin-right: 0px;
     color: #28bb25;
+    position: absolute;
+    right: 0px;
 }
 
 .menu li .checkMark.selected {

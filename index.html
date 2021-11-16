@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="login-page">
+    <div class="login-page ">
         <img class="login-logo" src="assets/logo.png">
         <input onkeypress="onEnterPress(this)" class="nickname-text-box" type="text" placeholder="Digite o seu nome" data-identifier="enter-name">
         <button onclick="login()" data-identifier="start">
@@ -43,24 +43,18 @@
             <h1><b>Escolha um contato para enviar mensagem:</b></h1>
             <ul class="contacts">
                 <li onclick="selection(this)" data-identifier="participant">
-                    <div>
-                        <ion-icon name="people"></ion-icon> <span>Todos</span>
-                    </div>
+                    <ion-icon name="people"> </ion-icon> <span>Todos</span>
                     <ion-icon class="checkMark selected" name="checkmark"></ion-icon>
                 </li>
             </ul>
             <h1><b>Escolha a visibilidade:</b></h1>
             <ul class="visibility">
                 <li onclick="selection(this)" data-identifier="visibility">
-                    <div>
-                        <ion-icon name="lock-open"></ion-icon> <span>Público</span>
-                    </div>
+                    <ion-icon name="lock-open"></ion-icon> <span>Público</span>
                     <ion-icon class="checkMark selected" name="checkmark"></ion-icon>
                 </li>
                 <li onclick="selection(this)" data-identifier="visibility">
-                    <div>
-                        <ion-icon name="lock-closed"></ion-icon> <span>Reservadamente</span>
-                    </div>
+                    <ion-icon name="lock-closed"></ion-icon> <span>Reservadamente</span>
                     <ion-icon class="checkMark" name="checkmark"></ion-icon>
                 </li>
             </ul>

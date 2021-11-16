@@ -114,12 +114,12 @@ function participantsCallerThen(promise) {
     const participants = promise.data;
     if (selectedParticipant !== "Todos") {
         document.querySelector(".contacts").innerHTML = `<li onclick="selection(this)" data-identifier="participant">
-        <div><ion-icon name="people"></ion-icon> <span>Todos</span></div>
+        <ion-icon name="people"></ion-icon> <span>Todos</span>
         <ion-icon class="checkMark" name="checkmark"></ion-icon>
         </li>`
     } else {
         document.querySelector(".contacts").innerHTML = `<li onclick="selection(this)" data-identifier="participant">
-        <div><ion-icon name="people"></ion-icon> <span>Todos</span></div>
+        <ion-icon name="people"></ion-icon> <span>Todos</span>
         <ion-icon class="checkMark selected" name="checkmark"></ion-icon>
         </li>`;
     }
@@ -127,12 +127,12 @@ function participantsCallerThen(promise) {
         if (participants[i].name !== user.name) {
             if (selectedParticipant !== participants[i].name) {
                 document.querySelector(".contacts").innerHTML += `<li onclick="selection(this)" data-identifier="participant">
-                <div><ion-icon name="people-circle"></ion-icon> <span>${participants[i].name}</span></div>
+                <ion-icon name="people-circle"></ion-icon> <span>${participants[i].name}</span>
                 <ion-icon class="checkMark" name="checkmark"></ion-icon>
                 </li>`
             } else {
                 document.querySelector(".contacts").innerHTML += `<li onclick="selection(this)" data-identifier="participant">
-                <div><ion-icon name="people-circle"></ion-icon> <span>${participants[i].name}</span></div>
+                <ion-icon name="people-circle"></ion-icon> <span>${participants[i].name}</span>
                 <ion-icon class="checkMark selected" name="checkmark"></ion-icon>
                 </li>`
             }
