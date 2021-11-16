@@ -1,59 +1,49 @@
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 }
 
 body {
     height: 100vh;
-    background: #E5E5E5;
-}
-
-i {
-    font-style: italic;
-}
-
-b {
-    font-style: normal;
-    font-weight: bold;
-}
-
-time {
-    color: #AAAAAA;
-}
-
-.main {
-    height: 100%;
-    width: 100%;
 }
 
 .login-page {
     height: 100%;
+    width: 100%;
+    padding-top: 72px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #FFFFFF;
 }
 
-.login-logo {
-    margin: 72px 0px 94px;
+.login-page img {
     width: 130px;
     height: 92px;
+    margin-bottom: 94px;
 }
 
-.nickname-text-box {
+.loading {
+    height: 130px;
+    width: 130px;
+}
+
+.login-page input {
     width: 261px;
     height: 54px;
     background: #FFFFFF;
     border: 1px solid #D7D7D7;
-    box-sizing: border-box;
     border-radius: 4px;
-    margin-bottom: 15px;
     text-align: center;
+    outline: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 139%;
+    margin-bottom: 15px;
 }
 
-.nickname-text-box::placeholder {
+.login-page input::placeholder {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -65,35 +55,31 @@ time {
     color: #AEAEAE;
 }
 
-button {
+.login-page button {
     width: 109px;
     height: 45px;
     background: #E7E7E7;
-    border: none;
     border-radius: 9px;
+    border: none;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 139%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     color: #696969;
 }
 
-nav,
-footer {
-    height: 80px;
+main {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #FFFFFF;
 }
 
 nav {
-    padding: 0px 22px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
-    position: sticky;
     top: 0px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 nav img {
@@ -101,32 +87,45 @@ nav img {
     height: 53px;
 }
 
-nav ion-icon,
-footer ion-icon {
-    width: 43px;
+nav ion-icon {
     height: 31px;
+    width: 42px;
 }
 
-.main-page {
-    background: #F3F3F3;
+nav,
+footer {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 22px 0px;
+    position: fixed;
+    background: #FFFFFF;
 }
 
 .chat {
-    margin: 22px 0px 22px;
+    height: 100%;
+    width: 100vw;
+    padding: 106px 0px;
+    background: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    overflow-y: scroll;
 }
 
 .message {
+    background: #FFFFFF;
     border-radius: 2px;
-    margin: 4px 0px 4px;
-    padding: 15px 9px 12px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 143%;
     display: flex;
     align-items: center;
-    background: #FFFFFF;
+    padding: 15px 0px 15px 8px;
 }
 
 .logged-in-out {
@@ -138,78 +137,106 @@ footer ion-icon {
 }
 
 footer {
-    padding: 0px 18px;
-    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
-    position: sticky;
     bottom: 0px;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
 }
 
-.message-text-box {
-    border: none;
-    outline: none;
+.chat time {
+    color: #AAAAAA;
 }
 
-.message-text-box::placeholder {
-    font-family: Roboto;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
+.chat b {
+    font-weight: 700;
+}
+
+footer div {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+}
+
+footer input,
+footer input::placeholder,
+footer span {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 18px;
     color: #000000;
 }
 
-footer div i {
-    margin-top: 11px;
+footer input {
+    width: 100%;
+    border: none;
+    outline: none;
     font-weight: normal;
-    font-size: 18px;
+    line-height: 21px;
     line-height: 139%;
-    display: flex;
-    align-items: center;
-    color: #505050;
+}
+
+footer input::placeholder {
+    font-weight: bold;
+    font-style: italic;
+}
+
+footer span {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+footer ion-icon {
+    font-size: 26px;
 }
 
 aside {
     height: 100%;
     width: 100%;
-    position: fixed;
-    z-index: 1;
     display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 .transparent {
-    width: 31%;
     height: 100%;
+    width: 31%;
     background: rgba(0, 0, 0, 0.6);
 }
 
 .menu {
+    padding: 26px 18px;
+    height: 100%;
     width: 69%;
-    margin: 26px 0px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 28px;
+    background: #FFFFFF;
+}
+
+.contacts,
+.visibility {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: left;
 }
 
 .menu h1 {
     font-family: Roboto;
     font-style: normal;
+    font-weight: bold;
     font-size: 16px;
     line-height: 19px;
     display: flex;
     align-items: center;
     text-align: center;
     color: #000000;
-}
-
-.menu ion-icon {
-    width: 22px;
-    height: 22px;
+    margin: 33px 0px;
 }
 
 .menu li {
+    width: 100%;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -217,29 +244,27 @@ aside {
     line-height: 19px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     color: #000000;
-    position: relative;
-    margin-left: 8px;
 }
 
-.checkmark {
-    display: none;
-    color: #28BB25;
-    font-weight: bolder;
-    position: absolute;
-    right: 28px;
-}
-
-.contacts,
-.visibility {
+aside ul div {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 18px;
-    width: 100%;
+    align-items: center;
 }
 
-.selected .checkmark {
+.menu li ion-icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.menu li .checkMark {
+    display: none;
+    margin-right: 0px;
+    color: #28bb25;
+}
+
+.menu li .checkMark.selected {
     display: initial;
 }
 
